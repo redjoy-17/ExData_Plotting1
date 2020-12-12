@@ -13,6 +13,7 @@ sm3<-as.numeric(data$Sub_metering_3)
 plot(x=data$DateTime,y=sm1,type="l",xlab="",ylab="Energy sub metering")
 points(x=data$DateTime,y=sm2,type="l",col="red")
 points(x=data$DateTime,y=sm3,type="l",col="blue")
-legend("topright",lwd=2,lty=1,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright",lwd=2,lty=1,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),cex=.5)
 dev.copy(png,file="plot3.png",width=480,height=480)
 dev.off()
+
